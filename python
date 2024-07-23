@@ -1,0 +1,25 @@
+class student:
+def __init__(self):
+self.items=[]
+def insert(self):
+n = int(input("Enter the number of records: "))
+for i in range(n):
+name=input("Student Name: ")
+regno=int(input("Register Number: "))
+branch=input("Branch: ")
+result=input("Result: ")
+self.items.append([name,regno,branch,result])
+def delete(self):
+regno=int(input("Enter Register Number to delete: "))
+for row in self.items:
+for i in row:
+if i==regno:
+self.items.remove(row)
+def display(self):
+for i in self.items:
+print(i)
+s=student()
+s.insert()
+s.display()
+s.delate()
+s.display()
